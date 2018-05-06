@@ -7,7 +7,7 @@ module MarshalRb
   MINOR_VERSION = 8
 
   autoload :ReadBuffer,  'marshal-rb/read_buffer'
-  autoload :WriteBuffer, 'marshal-rb/read_buffer'
+  autoload :WriteBuffer, 'marshal-rb/write_buffer'
 
   def dump(object)
     WriteBuffer.new(object).write
